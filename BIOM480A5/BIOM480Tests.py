@@ -166,8 +166,10 @@ def brown_forsythe_test(data):
     
     if p_value < 0.05:
         print("Reject the null hypothesis: The variances are not equal.")
-
-    return F_stat, p_value
+    else:
+        print("Fail to reject the null hypothesis: The variances are equal.")
+        
+    return p_value
 
 #*********************
 # Kayla T will present on the topic of Distance correlation test, creating function named 'dcor' 
